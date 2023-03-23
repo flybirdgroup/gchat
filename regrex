@@ -1,0 +1,14 @@
+import re
+
+# Define the SQL query as a string
+sql_query = "CREATE OR REPLACE VIEW {0}.{1}_tsbc_cdm_gsgrasancation_ster_idm As select * from where (CDM_extraction='CAMP'); CREATE OR REPLACE VIEW {0}.{1}_bc_cdm_party_master_ttbis As select * from where 1=1"
+
+# Define the regular expression pattern to extract the view names
+view_name_pattern = r"VIEW\s+\w+\.\w+_hsbc_([a-zA-Z0-9_]+)"
+
+# Use re.findall() to extract all view names from the SQL query
+view_names = re.findall(view_name_pattern, sql_query, re.IGNORECASE)
+
+# Print the extracted view names
+for view_name in view_names:
+    print(view_name)
