@@ -1,17 +1,12 @@
 import re
 
-sql_query = "CREATE OR REPLACE VIEW {0}.{1}_hsbc_sasefm_fcm_cca_icdm AS SELECT * FROM WHERE (CDM_extraction='CAMP'); CREATE OR REPLACE VIEW {0}.{1}_hsbc_sasefm_fcm_cca_icdm AS SELECT * FROM WHERE 1=1"
+sql_query = "CREATE OR REPLACE VIEW {0}.{1}_tttts_sefm_fcm_cca_iffcdm AS SELECT * FROM WHERE (CDM_extraction='hMP'); CREATE OR REPLACE VIEW {0}.{1}_hsfsfc_safdfm_fcm_cca_icdm AS SELECT * FROM WHERE 1=1"
 
 # Define a regex pattern to match the view name
-pattern = r"{0}\.{1}_(\w+)"
+pattern = r"CREATE OR REPLACE VIEW \{0\}\.\{1\}(_\w+)"
 
 # Use re.search to find the first match of the pattern in the SQL query
-match = re.search(pattern, sql_query)
+view_names = re.findall(pattern,sql_query)
 
-# Extract the view name from the match object
-if match:
-    view_name = match.group(1)
-    print(view_name)
-else:
-    print("View name not found.")
+view_names
 
