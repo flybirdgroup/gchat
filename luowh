@@ -46,3 +46,19 @@ Answer: Cash flow and liquidity pressure tests are used to evaluate the financia
 
 How did you build financial reports for China regulation authorities and company leadership?
 Answer: I built financial reports for China regulation authorities and company leadership by collecting and processing financial data, analyzing it using appropriate tools and techniques, and presenting it in a clear and concise manner using reports and visualizations.
+
+**************************third******************************************************************
+What is Kafka?
+Answer: Kafka is an open-source distributed event streaming platform that is used to publish and subscribe to streams of records, store streams of records in a fault-tolerant way, and process streams of records.
+
+What is Spark Streaming?
+Answer: Spark Streaming is an extension of the core Spark API that enables scalable, high-throughput, fault-tolerant stream processing of live data streams.
+
+What is HBase?
+Answer: HBase is an open-source, distributed NoSQL database that provides random access and strong consistency for large-scale, structured data.
+
+What is Impala?
+Answer: Impala is an open-source, distributed SQL query engine that is used to process large-scale, structured data in real time.
+
+How did you develop Kudu and HBase receiver programs for Spark Streaming programs?
+Answer: I developed Kudu and HBase receiver programs for Spark Streaming programs by implementing the necessary code in Spark Streaming to read data from Kudu and HBase, processing the data using Spark transformations, and then storing the results back to Kudu and HBase.
