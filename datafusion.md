@@ -1,4 +1,6 @@
-Datafusion 的一个强大功能是它的数据连接能力，即 joins。Joins 是将两个或多个数据表（或视图）合并到一起，以便更好地进行数据分析和可视化。
+大家好，我今天要和大家介绍的是 Google Cloud Platform (GCP) 的一个组件，它叫做 Datafusion。
+
+Datafusion 是一个基于云的 ETL 工具，它可以帮助企业从不同来源的数据源中提取、转换和加载数据，以便更好地分析和利用这些数据。Datafusion 支持多种数据源，包括关系型数据库、NoSQL 数据库、文件和云存储等，可以方便地将这些数据源集成到一起。
 
 Datafusion 的 Join 是一种用于在多个数据源之间合并数据的操作，类似于 SQL 中的 Join。使用 Datafusion Join，用户可以将来自不同数据源的数据合并成一个数据集，并进行进一步的数据分析和处理。Datafusion 提供了多种 Join 操作，包括 Inner Join、Left Join、Right Join 和 Outer Join 等，可以满足不同的数据合并需求。用户可以根据自己的实际情况选择合适的 Join 操作，并设置 Join 条件和 Join 列，以便实现数据的精确匹配和合并
 
